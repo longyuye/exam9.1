@@ -49,3 +49,69 @@ body,html,.wrap{ width:100%; height:100%;}
     border-top:#999;
     border-bottom:#999;
 }
+
+main{
+ width: 100%;
+ flex:1;
+ overflow-y:scroll;
+}
+section{
+    height:2.5rem;
+    margin: .3rem auto;
+    width: 90%;
+    border:1px solid #ccc;
+    font-size: 0.32rem;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.se_top{
+    height:1.5rem;
+    width:100%;
+    display: flex;
+
+    justify-content:space-between;
+}
+.moun{
+    width: 0.4rem;
+    height: 0.45rem;
+    margin-left: 0.07rem;
+}
+
+.moun img{
+    width: .4rem;
+}
+.se_top b{
+    color:#fff;
+    font-size: 1.5rem;
+    margin-left: .4rem;
+    line-height:1.5rem;
+    flex:1;
+}
+i{
+    font-size: .6rem;
+    color:#fff;
+    line-height:1.5rem;
+    margin-right: .3rem;
+}
+.se_bottom{
+    font-size: .2rem;
+
+}
+
+
+.se_bottom .no1 span{
+    display: inline-block;
+    width: 0.3rem;
+    height:0.3rem;
+    background: url(img/b.png);
+    background-size: 0.3rem 0.6rem;
+    background-position: 0 0;
+}
+.se_bottom .no2 span{
+    display: inline-block;
+    width: 0.3rem;
+    height:0.3rem;
+    background: url(img/b.png);
+    background-size: 0.3rem 0.6rem;
+    background-position: 0 .3rem;
+}

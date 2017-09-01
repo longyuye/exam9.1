@@ -24,22 +24,44 @@
             </div>
         </header><!-- /header -->
         <main>
-            <!-- <section>
-                <div class="se_top">
-                    <span><img src="img/a.png" alt=""></span>
+            <section>
+                <div style="background: red;" class="se_top">
+                    <span class="moun"><img src="img/a.png" alt=""></span>
                     <b>5</b>
                     <i>满减券</i>
                 </div>
                 <div class="se_bottom">
-                    <p><span><img src="img/b.png" alt=""></span>使用门槛：1、满100元可用；2、所有商品通用</p>
-                    <p><span><img src="img/b.png" alt=""></span>使用时间：即日起值2016年11月10日</p>
+                    <p class="no1"><span></span>使用门槛：1、满100元可用；2、所有商品通用</p>
+                    <p class="no2"><span></span>使用时间：即日起值2016年11月10日</p>
                 </div>
-            </section> -->
+            </section>
+            <section>
+                <div style="background: green;" class="se_top">
+                    <span class="moun"><img src="img/a.png" alt=""></span>
+                    <b>5</b>
+                    <i>满减券</i>
+                </div>
+                <div class="se_bottom">
+                    <p class="no1"><span></span>使用门槛：1、满100元可用；2、所有商品通用</p>
+                    <p class="no2"><span></span>使用时间：即日起值2016年11月10日</p>
+                </div>
+            </section>
+            <section>
+                <div style="background: blue;" class="se_top">
+                    <span class="moun"><img src="img/a.png" alt=""></span>
+                    <b>5</b>
+                    <i>满减券</i>
+                </div>
+                <div class="se_bottom">
+                    <p class="no1"><span></span>使用门槛：1、满100元可用；2、所有商品通用</p>
+                    <p class="no2"><span></span>使用时间：即日起值2016年11月10日</p>
+                </div>
+            </section>
         </main>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script>
-        $('main').find('section').eq(0).show();
+        $('main').find('section').eq(0).show().siblings().hide();
         $(".list").on('click',"li",function(){
             var ind = $(this).index();
             $(this).addClass('on').siblings().removeClass('on');
